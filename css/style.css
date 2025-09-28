@@ -1,0 +1,35 @@
+:root{--c-bg:#fff;--c-fg:#111;--c-muted:#f1f1f1;--c-border:#ddd;--radius:6px;--shadow-sm:0 4px 12px rgba(0,0,0,.15);--shadow-md:0 6px 18px rgba(0,0,0,.2)}
+html,body{height:100%}
+body{background:var(--c-bg);color:var(--c-fg)}
+.global-badges{position:fixed;inset:0;pointer-events:none}
+.badge-top-left{position:fixed;top:10px;left:12px;font-size:12px;letter-spacing:.5px;font-family:"Mongolian Baiti",serif;color:var(--c-fg);opacity:.9;z-index:9999}
+.badge-bottom-right{position:fixed;right:12px;bottom:10px;font-size:14px;letter-spacing:.5px;font-family:"Viner Hand ITC",cursive;color:var(--c-fg);opacity:.9;z-index:9999}
+.hero{width:100%;min-height:60vh;background-position:center;background-size:cover;background-repeat:no-repeat}
+.hero-portada{background-image:url('../img/PORTAFOLIO 1.jpg')}
+.seccion-fondo{position:relative;background-image:url('../img/fondo.jpg');background-size:cover;background-position:center;background-attachment:scroll}
+.seccion-fondo .container{position:relative;z-index:1}
+.img-perfil{max-width:320px;width:100%;height:auto;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow-md)}
+.cita{font-family:"Mongolian Baiti",serif;font-size:18px;line-height:1.6;margin:0;color:var(--c-fg)}
+.bio{background:var(--c-bg)}
+.titulo-seccion{font-family:"Viner Hand ITC",cursive;font-size:32px;margin-bottom:12px;color:var(--c-fg)}
+.parrafo{font-family:"Mongolian Baiti",serif;font-size:16px;line-height:1.8;margin:0;color:var(--c-fg)}
+.tabs-section{background:var(--c-bg)}
+.nav-pills .nav-link{font-family:"Viner Hand ITC",cursive;color:var(--c-fg);background:var(--c-muted);transition:background-color .2s ease,color .2s ease,transform .1s ease}
+.nav-pills .nav-link:hover{transform:translateY(-1px)}
+.nav-pills .nav-link:focus-visible{outline:2px solid var(--c-fg);outline-offset:2px}
+.nav-pills .nav-link.active{background:var(--c-fg);color:var(--c-bg)}
+.tab-pane-fondo{position:relative;background-image:url('../img/FONDO PRINCIPAL.jpg');background-size:cover;background-position:center}
+.tab-pane-fondo .container{position:relative;z-index:1}
+.tab-text{font-family:"Mongolian Baiti",serif;font-size:16px;color:var(--c-fg);margin:0}
+.img-grid{width:100%;height:220px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease}
+.img-grid:hover{transform:scale(1.015);box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.img-grid:focus-visible{outline:2px solid var(--c-fg);outline-offset:2px}
+.video-link{display:block;width:100%;padding:14px 12px;text-align:center;background:#ffffffcc;border:1px solid var(--c-border);border-radius:var(--radius);color:var(--c-fg);text-decoration:none;transition:background-color .2s ease,color .2s ease,transform .1s ease}
+.video-link:hover{background:#fff;color:#000;transform:translateY(-1px)}
+.video-link:focus-visible{outline:2px solid var(--c-fg);outline-offset:2px}
+@media (max-width:576px){
+.badge-top-left{font-size:11px}
+.badge-bottom-right{font-size:13px}
+.img-grid{height:160px}
+.img-perfil{max-width:240px}
+}
